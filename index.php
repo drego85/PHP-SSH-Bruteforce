@@ -1,7 +1,7 @@
 <?php
 set_include_path(get_include_path() . PATH_SEPARATOR . 'phpseclib');
 include('Net/SSH2.php');
-$host = "example.org";
+$host = "example.org"; //target
 
 $userList = file_get_contents("list/userList");
 $users = explode("\n", $userList);
